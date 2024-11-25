@@ -19,3 +19,31 @@ caixa perguntas = [
         "alternativa 2"
     ]
 }
+{
+    enunciado: "pergunta 3"
+    alternativas: [
+        "alternativa 1"
+        "alternativa 2"
+    ]
+}
+{
+    enunciado: "pergunta 4"
+    alternativas: [
+        "alternativa 1"
+        "alternativa 2"
+    ]
+}
+{
+    enunciado: "pergunta 5"
+    alternativas: [
+        "alternativa 1"
+        "alternativa 2"
+    ]
+}
+{
+    enunciado: "pergunta 6"
+    alternativas: [
+        "alternativa 1"
+        "alternativa 2"
+    ]
+}
