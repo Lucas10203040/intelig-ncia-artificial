@@ -80,6 +80,7 @@ caixaPerguntas textcontent= perguntaAtual. enunciado;
 mostraAlternativas();
 }
 function mostraAlternativas(){
+    const botaoAlternativas=
     for(const alternativa of perguntaAtual. alternativa){
         const botaoAlternativas.textContent= alternativa;
         caixaAlternativas. appendChild (botaoAlternativas);
