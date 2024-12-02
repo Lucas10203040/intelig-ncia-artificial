@@ -68,3 +68,22 @@ Desejando riqueza e glória, Aron toca o cristal. Sua vila desaparece, e ele aco
         "
     ]
 }
+];
+
+let atual= 0;
+let perguntaAtual;
+
+
+function-mostraPergunta(){
+perguntaAtual= perguntas[atual];
+caixaPerguntas textcontent= perguntaAtual. enunciado;
+mostraAlternativas();
+}
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual. alternativa){
+        const botaoAlternativas.textContent= alternativa;
+        caixaAlternativas. appendChild (botaoAlternativas);
+    }
+}
+mostraPergunta();
+
