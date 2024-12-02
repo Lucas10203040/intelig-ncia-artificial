@@ -4,7 +4,7 @@ const caixaAlternativas = document.querySelector(".caixa__alternativas");
 const caixaResultados = document.querySelector(".caixa__resultados");
 const textoResultado = document.querySelector(".texto__resultado");
 
-caixa perguntas = [
+const perguntas = [
     {
         enunciado: "Aron, um jovem aventureiro, chega à entrada da Floresta dos Segredos em busca de um artefato lendário. No chão, encontra uma adaga antiga com runas brilhantes.
 
@@ -64,27 +64,26 @@ Desejando riqueza e glória, Aron toca o cristal. Sua vila desaparece, e ele aco
 "
         "O Sacrifício de Aron 
         Aron deseja paz para sua vila. O cristal brilha intensamente, e ele sente sua energia ser drenada. Quando acorda, está de volta à entrada da floresta, exausto. Ele retorna à vila e a encontra próspera, mas ninguém se lembra de sua jornada. Ainda assim, Aron sorri, satisfeito com sua decisão altruísta.
-
-        "
     ]
-}
+},
 ];
 
-let atual= 0;
+let atual = 0;
 let perguntaAtual;
 
-
-function-mostraPergunta(){
-perguntaAtual= perguntas[atual];
-caixaPerguntas textcontent= perguntaAtual. enunciado;
+function mostraPergunta() {
+perguntaAtual = perguntas[atual];
+caixaPerguntas.textContent = perguntaAtual.enunciado;
 mostraAlternativas();
 }
-function mostraAlternativas(){
-    const botaoAlternativas=
-    for(const alternativa of perguntaAtual. alternativa){
-        const botaoAlternativas.textContent= alternativa;
-        caixaAlternativas. appendChild (botaoAlternativas);
-    }
-}
-mostraPergunta();
 
+function mostraAlternativas() {
+for (const alternativa of perguntaAtual.alternativas) {
+    const botaoAlternativas = document.createElement("button");
+    botaoAlternativas.textContent = alternativa;
+    caixaAlternativas.appendChild(botaoAlternativas);
+}
+}
+
+mostraPergunta();
+ 
